@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace RestWithASPNET10Course.Model
 {
     [Table("person")]
-    public class Book
+    public class Person
     {
         [Key]
         [Column("id")]

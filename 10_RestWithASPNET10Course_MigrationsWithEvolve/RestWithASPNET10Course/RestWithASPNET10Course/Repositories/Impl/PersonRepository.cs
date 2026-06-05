@@ -6,9 +6,9 @@ namespace RestWithASPNET10Course.Repositories.Impl
     public class PersonRepository : IPersonRepository
     {
 
-        private MSSQLCcontext _context;
+        private MSSQLContext _context;
 
-        public PersonRepository(MSSQLCcontext context)
+        public PersonRepository(MSSQLContext context)
         {
             _context = context;
         }

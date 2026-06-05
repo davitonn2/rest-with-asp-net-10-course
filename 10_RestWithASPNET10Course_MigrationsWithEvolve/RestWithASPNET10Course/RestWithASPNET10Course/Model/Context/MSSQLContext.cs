@@ -2,10 +2,12 @@
 
 namespace RestWithASPNET10Course.Model.Context
 {
-    public class MSSQLCcontext : DbContext
+    public class MSSQLContext : DbContext
     {
-        public MSSQLCcontext(DbContextOptions<MSSQLCcontext> options)
+        public MSSQLContext(DbContextOptions<MSSQLContext> options)
             : base(options){}
         public DbSet<Book> Persons { get; set; }
+
+        public DbSet<Book> Books { get; set; }
     }
 }

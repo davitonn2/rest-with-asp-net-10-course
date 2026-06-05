@@ -13,7 +13,7 @@ namespace RestWithASPNET10Course.Configurations
             {
                 throw new Exception("Connection string for MSSQL Server SQL is not configured.");
             }
-            services.AddDbContext<MSSQLCcontext>(options =>
+            services.AddDbContext<MSSQLContext>(options =>
                 options.UseSqlServer(connectionString));
             return services;
         }

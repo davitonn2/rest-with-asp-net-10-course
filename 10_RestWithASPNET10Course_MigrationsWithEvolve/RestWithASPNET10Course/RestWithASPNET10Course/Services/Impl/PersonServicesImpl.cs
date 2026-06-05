@@ -1,8 +1,4 @@
 ﻿using RestWithASPNET10Course.Model;
-using RestWithASPNET10Course.Services;
-using RestWithASPNET10Course.Model;
-using Microsoft.EntityFrameworkCore;
-using RestWithASPNET10Course.Model.Context;
 using RestWithASPNET10Course.Repositories;
 
 namespace RestWithASPNET10Course.Services.Impl
@@ -21,6 +17,7 @@ namespace RestWithASPNET10Course.Services.Impl
         {
             return _repository.FindAll();
         }
+
         public Book FindById(long id)
         {
             return _repository.FindById(id);
@@ -37,7 +34,7 @@ namespace RestWithASPNET10Course.Services.Impl
         }
         public void Delete(long id)
         {
-           _repository.Delete(id);
+            _repository.Delete(id);
         }
     }
 }
